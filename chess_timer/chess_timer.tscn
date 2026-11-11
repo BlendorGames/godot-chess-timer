@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://boilojj4uwvkn"]
+
+[ext_resource type="Script" uid="uid://btqbcwcefewh0" path="res://chess_timer/chess_timer.gd" id="1_oamsi"]
+[ext_resource type="Texture2D" uid="uid://b1ypg4v3p5nba" path="res://photo_2026-11-03_09-30-11.jpg" id="1_qkvd5"]
+[ext_resource type="FontFile" uid="uid://10vvbq5k6stk" path="res://W95F.otf" id="2_esqh3"]
+[ext_resource type="StyleBox" uid="uid://v444xkiab76b" path="res://themes/buttons/button_normal.tres" id="4_oamsi"]
+[ext_resource type="StyleBox" uid="uid://c5iupc5kpkqg6" path="res://themes/buttons/button_pressed.tres" id="5_0q5kc"]
+[ext_resource type="StyleBox" uid="uid://d0pcu76njcy70" path="res://themes/buttons/button_hover.tres" id="6_iyflg"]
+[ext_resource type="AudioStream" uid="uid://dj55tcymtonts" path="res://chess_timer/saund/freesound_community-ticking-timer-65220.mp3" id="7_0q5kc"]
+[ext_resource type="AudioStream" uid="uid://d2fid6wuuarod" path="res://chess_timer/saund/universfield-microwave-timer-117077.mp3" id="8_iyflg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oamsi"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0r3vl"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[node name="Control" type="Control" unique_id=2000290338]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oamsi")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2106423315]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7529412, 0.7529412, 0.7529412, 1)
+metadata/_edit_lock_ = true
+
+[node name="Photo20261103093011" type="Sprite2D" parent="." unique_id=930331594]
+position = Vector2(1793, -98)
+texture = ExtResource("1_qkvd5")
+
+[node name="Label" type="Label" parent="." unique_id=6377150]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 300.0
+offset_top = -111.0
+offset_right = 530.0
+offset_bottom = -17.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_esqh3")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_oamsi")
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Label2" type="Label" parent="." unique_id=1144737693]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -530.0
+offset_top = -111.0
+offset_right = -300.0
+offset_bottom = -17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.19999993, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_esqh3")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_0r3vl")
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1481422432]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 52.0
+offset_right = 380.0
+offset_bottom = 126.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_esqh3")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("4_oamsi")
+theme_override_styles/pressed = ExtResource("5_0q5kc")
+theme_override_styles/hover = ExtResource("6_iyflg")
+text = "FIRST"
+metadata/_edit_lock_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=1943636391]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = 52.0
+offset_right = 90.0
+offset_bottom = 125.99988
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_esqh3")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("4_oamsi")
+theme_override_styles/pressed = ExtResource("5_0q5kc")
+theme_override_styles/hover = ExtResource("6_iyflg")
+text = "RESET"
+metadata/_edit_lock_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=1848040080]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = 52.0
+offset_right = -200.0
+offset_bottom = 126.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_esqh3")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("4_oamsi")
+theme_override_styles/pressed = ExtResource("5_0q5kc")
+theme_override_styles/hover = ExtResource("6_iyflg")
+text = "TWICE"
+metadata/_edit_lock_ = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1390035334]
+
+[node name="Timer2" type="Timer" parent="." unique_id=1812066544]
+
+[node name="AudioStreamPlayer_start" type="AudioStreamPlayer" parent="." unique_id=2033792266]
+stream = ExtResource("7_0q5kc")
+
+[node name="AudioStreamPlayer_stop" type="AudioStreamPlayer" parent="." unique_id=1949646327]
+stream = ExtResource("8_iyflg")

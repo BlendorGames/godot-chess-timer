@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cdbsf6gnks2ex"]
+
+[ext_resource type="Script" uid="uid://cpgvnaq12utv6" path="res://random_sceane/dino_three.gd" id="1_783tc"]
+
+[sub_resource type="Gradient" id="Gradient_tmpym"]
+offsets = PackedFloat32Array(0.028465347, 1)
+colors = PackedColorArray(0.49433076, 0.49433076, 0.4943307, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tmpym"]
+gradient = SubResource("Gradient_tmpym")
+
+[sub_resource type="Gradient" id="Gradient_783tc"]
+offsets = PackedFloat32Array(0.028465347, 1)
+colors = PackedColorArray(0.49, 0, 0, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_783tc"]
+gradient = SubResource("Gradient_783tc")
+
+[node name="Control" type="Control" unique_id=736510907]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_783tc")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1456605086]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=836958881]
+position = Vector2(1200, 324)
+scale = Vector2(0.2, 50)
+texture = SubResource("GradientTexture1D_tmpym")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1777033169]
+position = Vector2(1280, 324)
+scale = Vector2(0.2, 50)
+texture = SubResource("GradientTexture1D_783tc")
+metadata/_edit_lock_ = true
